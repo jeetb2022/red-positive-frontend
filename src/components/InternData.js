@@ -29,8 +29,11 @@ const InternData = (props) => {
       setSelecteddataId(new_array);
     }
   }
+  const refresh = () => window.location.reload(true)
+
   useEffect(()=>{
     props.getData(selectedDataId);
+    refresh();
   },[selectedDataId])
 
   
