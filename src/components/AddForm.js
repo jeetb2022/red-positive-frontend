@@ -6,7 +6,7 @@ const ErrorModal = (props) => {
   const [errorName, setErrorName] = useState(false);
   const [errorEmail, setErrorEmail] = useState(false);
   const [name, setName] = useState("");
-  const HOME_URL = "https://red-positive-backend-y7xd.vercel.app/";
+  const HOME_URL = "https://red-positive-backend-3r9r.vercel.app/";
   const nameChangeHandler = (ele) => {
     setName(ele.target.value);
     if (ele.target.value.trim().length === 0) {

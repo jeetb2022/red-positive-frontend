@@ -5,7 +5,7 @@ import './InternData.css';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import Update from './Update'
-const HOME_URL = 'https://red-positive-backend-y7xd.vercel.app/';
+const HOME_URL = 'https://red-positive-backend-3r9r.vercel.app/';
 const InternData = (props) => {
   const [internData, setInternData] = useState([]);
   useEffect(() => {
@@ -58,7 +58,7 @@ console.log(prevData);
     setId(props.target.id);
   }
   useEffect(() => {
-    axios.post(`https://red-positive-backend-y7xd.vercel.app/delete`, selectedDataIdToDelete);
+    axios.post(`https://red-positive-backend-3r9r.vercel.app/delete`, selectedDataIdToDelete);
   }, [selectedDataIdToDelete]);
 function slic (){
   setUpdateForm(!updateForm);
