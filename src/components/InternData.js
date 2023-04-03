@@ -33,7 +33,7 @@ const InternData = (props) => {
 
   useEffect(()=>{
     props.getData(selectedDataId);
-    refresh();
+    
   },[selectedDataId])
 
   
@@ -48,6 +48,7 @@ const InternData = (props) => {
       });
       setSelecteddataIdToDelete(new_array);
     }
+    refresh();
   }
   const [updateForm,setUpdateForm] = useState(false);
   const [id,setId] = useState("");
