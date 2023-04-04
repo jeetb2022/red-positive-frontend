@@ -61,8 +61,8 @@ console.log(prevData);
     setUpdateForm(!updateForm);
     setId(props.target.id);
   }
-  useEffect(() => {
-    axios.post(`https://red-positive-backend-3r9r.vercel.app/delete`, selectedDataIdToDelete);
+  useEffect(async() => {
+   await axios.post(`https://red-positive-backend-3r9r.vercel.app/delete`, selectedDataIdToDelete);
   }, [selectedDataIdToDelete]);
 function slic (){
   setUpdateForm(!updateForm);
