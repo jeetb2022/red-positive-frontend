@@ -35,9 +35,9 @@ const phoneChangeHandler = (ele) => {
   setPhone(ele.target.value);
 };
 const [hobbies,setHobbies]= useState(`${props.prevdata[0].intern_hobbies}`);
-const hobbiesChangeHandler =  (ele) => {
+const hobbiesChangeHandler = async (ele) => {
   console.log(ele.target.value);
-   setHobbies(ele.target.value);
+  await setHobbies(ele.target.value);
 };
 const refresh = () => window.location.reload(true)
 
