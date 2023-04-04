@@ -3,7 +3,7 @@ import './Update.css'
 import {useState } from "react";
 import axios from "axios";
 const Update = (props)=>{
-    console.log(props.prevdata);
+    // console.log(props.prevdata);
 const [errorName,setErrorName]=useState(true);
 const [errorEmail,setErrorEmail]=useState(true);
 const [name,setName]= useState(`${props.prevdata[0].intern_name}`);
@@ -36,8 +36,9 @@ const phoneChangeHandler = (ele) => {
   setPhone(ele.target.value);
 };
 const [hobbies,setHobbies]= useState(`${props.prevdata[0].intern_hobbies}`);
-const hobbiesChangeHandler = async (ele) => {
-  await setHobbies(ele.target.value);
+const hobbiesChangeHandler =  (ele) => {
+  console.log(ele.target.value);
+   setHobbies(ele.target.value);
 };
 const refresh = () => window.location.reload(true)
 
