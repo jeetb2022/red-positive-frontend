@@ -37,9 +37,7 @@ const phoneChangeHandler = (ele) => {
 const [hobbies,setHobbies]= useState(`${props.prevdata[0].intern_hobbies}`);
 const hobbiesChangeHandler = async (ele) => {
   console.log(ele.target.value);
-  setTimeout(() => {
-    console.log('Hello, World!')
-  }, 1000);
+  
   await setHobbies(ele.target.value);
 };
 const refresh = () => window.location.reload(true)
@@ -54,6 +52,9 @@ const handleSubmit = async (event) => {
       intern_phone : phone,
       intern_hobbies : hobbies
     });
+    setTimeout(() => {
+      console.log('Hello, World!')
+    }, 3000);
     clickHandler();
     refresh();
 }
