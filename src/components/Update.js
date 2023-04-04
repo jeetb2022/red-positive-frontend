@@ -45,6 +45,9 @@ const refresh = () => window.location.reload(true)
 const handleSubmit = async (event) => {
   event.preventDefault();
   // console.log(hobbies);
+  await setTimeout(() => {
+     console.log('Hello, World!')
+   }, 3000);
  await axios.post(`${HOME_URL}update`,{
       _id : id,
       intern_name : name,
@@ -52,9 +55,6 @@ const handleSubmit = async (event) => {
       intern_phone : phone,
       intern_hobbies : hobbies
     });
-   await setTimeout(() => {
-      console.log('Hello, World!')
-    }, 3000);
     clickHandler();
     refresh();
 }
