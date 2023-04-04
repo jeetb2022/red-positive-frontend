@@ -41,10 +41,10 @@ const hobbiesChangeHandler = (ele) => {
 };
 const refresh = () => window.location.reload(true)
 
-const handleSubmit =  (event) => {
+const handleSubmit = async (event) => {
   event.preventDefault();
   console.log(name);
-  axios.post(`${HOME_URL}update`,{
+ await axios.post(`${HOME_URL}update`,{
       _id : id,
       intern_name : name,
       intern_email : email,
