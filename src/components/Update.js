@@ -3,8 +3,7 @@ import './Update.css'
 import {useState } from "react";
 import axios from "axios";
 const Update = (props)=>{
-    // console.log(props.prevdata);
-const [errorName,setErrorName]=useState(true);
+]const [errorName,setErrorName]=useState(true);
 const [errorEmail,setErrorEmail]=useState(true);
 const [name,setName]= useState(`${props.prevdata[0].intern_name}`);
 const HOME_URL = "https://red-positive-backend-3r9r.vercel.app/";

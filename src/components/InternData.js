@@ -40,7 +40,7 @@ const InternData = (props) => {
   const checkboxDeleteHandler = async (props) => {
     console.log(props.target.id);
     if (!selectedDataIdToDelete.includes(props.target.id)) {
-      setSelecteddataIdToDelete(prev => [...prev, props.target.id]);
+     await setSelecteddataIdToDelete(prev => [...prev, props.target.id]);
     }
     else {
       const new_array = await selectedDataIdToDelete.filter((id) => {
