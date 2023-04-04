@@ -48,7 +48,7 @@ const InternData = (props) => {
       });
      await setSelecteddataIdToDelete(new_array);
     }
-   await refresh();
+    refresh();
   }
   const [updateForm,setUpdateForm] = useState(false);
   const [id,setId] = useState("");
