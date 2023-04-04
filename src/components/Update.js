@@ -51,8 +51,8 @@ const handleSubmit = async (event) => {
       intern_phone : phone,
       intern_hobbies : hobbies
     });
-    refresh();
     clickHandler();
+    refresh();
 }
 
 useEffect(()=>{
