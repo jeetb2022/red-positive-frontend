@@ -43,7 +43,7 @@ const refresh = () => window.location.reload(true)
 
 const handleSubmit = async (event) => {
   event.preventDefault();
-  console.log(name);
+  console.log(hobbies);
  await axios.post(`${HOME_URL}update`,{
       _id : id,
       intern_name : name,
