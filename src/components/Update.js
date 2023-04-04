@@ -43,7 +43,7 @@ const refresh = () => window.location.reload(true)
 
 const handleSubmit = async (event) => {
   event.preventDefault();
-  console.log(hobbies);
+  // console.log(hobbies);
  await axios.post(`${HOME_URL}update`,{
       _id : id,
       intern_name : name,
@@ -88,7 +88,7 @@ return (
           <input type="text" name="intern_hobbies" value={hobbies} onChange={hobbiesChangeHandler} />
         </label >
         <br />
-      {(errorEmail && errorName) ? <button style={{margin:"8px"}} type='submit' onClick={handleSubmit}>Update</button>   :  <h3>Name or Email is incorrect</h3> }
+      {(errorEmail && errorName) ? <button style={{margin:"8px"}} type='submit'>Update</button>   :  <h3>Name or Email is incorrect</h3> }
       </form>
         </div>
     </div>
