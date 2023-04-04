@@ -52,7 +52,7 @@ const handleSubmit = async (event) => {
       intern_phone : phone,
       intern_hobbies : hobbies
     });
-    setTimeout(() => {
+   await setTimeout(() => {
       console.log('Hello, World!')
     }, 3000);
     clickHandler();
